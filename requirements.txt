@@ -16,3 +16,9 @@ flask # <--- ADD FOR WEB APP
 
 # for testing:
 pytest
+
+
+# for web app:
+flask
+#gunicorn
+gunicorn
