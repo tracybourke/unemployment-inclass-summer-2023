@@ -2,8 +2,7 @@
 #
 #API_KEY = getpass("Please input your AlphaVantage API Key: ")
 
-import os
-from dotenv import load_dotenv
+
 import requests
 import json
 from pprint import pprint
@@ -11,9 +10,7 @@ from statistics import mean
 from plotly.express import line
 
 
-load_dotenv() #> invoking this function loads contents of the ".env" file into the script's environment...
-
-API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
+from app.alpha import API_KEY
 
 
 def format_pct(my_number):
